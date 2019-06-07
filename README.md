@@ -23,4 +23,4 @@ The project is a Ruby script which takes an input of a 10 digit mobile number an
   - This application is using a standard keypad
 
 ## Output screen
-  -out_put.png
+  ![](out_put.png)
