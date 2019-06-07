@@ -40,7 +40,7 @@ class Phone
 
   def get_word_combinations(phone_no)
     check_valid_phone_no(phone_no)
-    
+    start_time = Time.now
     # Convert the phone number into an array Using split
     number_array = phone_no.split("")
 
@@ -56,7 +56,11 @@ class Phone
     end
 
     search_word_combinations(key_words)
-    
+    end_time = Time.now
+
+    p "start time : #{start_time}"
+    p "end time : #{end_time}"
+    p "Load Time : #{end_time - start_time}"
   end
 
   def check_valid_phone_no(phone_no)
@@ -96,6 +100,12 @@ class Phone
 
 
   end
+
+
+
+
+  
+
 end
 
 Phone.new
