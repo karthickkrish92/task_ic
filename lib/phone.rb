@@ -14,7 +14,7 @@ class Phone
 
    # Dictionary file words assign to variable
   def get_dictionary_words
-    @dictionary_words = File.read("./dictionary.txt").split("\n").map(&:downcase)
+    @dictionary_words = File.read("../dictionary.txt").split("\n").map(&:downcase)
   end
 
   # Phone number Validation.
